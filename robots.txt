@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://depanten.it/sitemap.xml
+
+Disallow: /privacy.html
+Disallow: /termini.html
