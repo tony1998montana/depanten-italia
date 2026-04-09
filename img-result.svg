@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" width="560" height="280">
+  <defs>
+    <radialGradient id="rbefore" cx="25%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b7064d" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#b7064d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rafter" cx="75%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4dff91" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#4dff91" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="rblur"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="rblur2"><feGaussianBlur stdDeviation="4"/></filter>
+    <linearGradient id="rskin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8b080"/>
+      <stop offset="100%" stop-color="#c88050"/>
+    </linearGradient>
+    <linearGradient id="rskin2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c090"/>
+      <stop offset="100%" stop-color="#d8a060"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="280" fill="#1e0814" rx="16"/>
+  <rect x="0" y="0" width="280" height="280" fill="url(#rbefore)" rx="16"/>
+  <rect x="280" y="0" width="280" height="280" fill="url(#rafter)"/>
+
+  <!-- Divider -->
+  <rect x="275" y="0" width="10" height="280" fill="#ffcc19" opacity="0.8"/>
+  <text x="280" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1e0814">VS</text>
+
+  <!-- === BEFORE (left) === -->
+  <!-- Person silhouette left - hunched/in pain -->
+  <!-- Body -->
+  <path d="M80,220 Q75,190 78,165 Q82,140 95,130 Q108,122 120,125 Q133,118 145,125 Q158,130 162,145 Q166,165 162,195 L150,220 Z" fill="url(#rskin)" opacity="0.9"/>
+  <!-- Head -->
+  <ellipse cx="120" cy="105" rx="26" ry="28" fill="#e8b080"/>
+  <!-- Neck -->
+  <rect x="110" y="120" width="20" height="18" rx="5" fill="#dda070"/>
+  <!-- Arms in pain position -->
+  <path d="M85,155 Q65,165 55,180 Q50,192 58,200 Q66,208 74,198 Q82,188 92,172 Z" fill="#dda070"/>
+  <path d="M157,155 Q177,165 187,180 Q192,192 184,200 Q176,208 168,198 Q160,188 150,172 Z" fill="#dda070"/>
+  <!-- Hand on back (pain gesture) -->
+  <ellipse cx="155" cy="185" rx="12" ry="8" fill="#c88050" transform="rotate(-20,155,185)"/>
+
+  <!-- Pain indicators - BEFORE -->
+  <ellipse cx="120" cy="165" rx="40" ry="25" fill="#ff4444" opacity="0.3" filter="url(#rblur2)"/>
+  <!-- Lightning bolts of pain -->
+  <g stroke="#ff6b6b" stroke-width="2.5" stroke-linecap="round" opacity="0.9">
+    <polyline points="148,145 158,155 150,163 162,175"/>
+    <polyline points="158,138 168,148 160,156 170,165"/>
+  </g>
+  <!-- Pain stars -->
+  <g fill="#ff6b6b" opacity="0.95" transform="translate(162,130)">
+    <polygon points="0,-10 2.3,-3.1 9.5,-3.1 3.8,1.2 5.9,8.1 0,3.8 -5.9,8.1 -3.8,1.2 -9.5,-3.1 -2.3,-3.1"/>
+  </g>
+  <g fill="#ffaa00" opacity="0.95" transform="translate(172,148)">
+    <polygon points="0,-7 1.6,-2.2 6.6,-2.2 2.7,0.8 4.1,5.7 0,2.7 -4.1,5.7 -2.7,0.8 -6.6,-2.2 -1.6,-2.2"/>
+  </g>
+
+  <!-- Sad face indicator -->
+  <circle cx="120" cy="105" r="18" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="4,3" opacity="0.5"/>
+
+  <!-- BEFORE label -->
+  <rect x="50" y="22" width="120" height="32" rx="8" fill="rgba(183,6,77,0.9)"/>
+  <text x="110" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff">PRIMA</text>
+  <!-- Pain level -->
+  <text x="110" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">dolore intenso 😣</text>
+
+  <!-- === AFTER (right) === -->
+  <!-- Person silhouette right - upright/happy -->
+  <!-- Body -->
+  <path d="M360,215 Q355,188 358,162 Q362,138 375,128 Q388,120 400,123 Q413,116 425,123 Q438,128 442,142 Q446,162 442,192 L430,215 Z" fill="url(#rskin2)" opacity="0.9"/>
+  <!-- Head -->
+  <ellipse cx="400" cy="100" rx="26" ry="28" fill="#f0c090"/>
+  <!-- Neck -->
+  <rect x="390" y="116" width="20" height="18" rx="5" fill="#e0b070"/>
+  <!-- Arms - raised/happy -->
+  <path d="M362,148 Q340,130 325,118 Q312,108 308,118 Q304,128 316,136 Q328,144 345,155 Z" fill="#e0b070"/>
+  <path d="M438,148 Q460,130 475,118 Q488,108 492,118 Q496,128 484,136 Q472,144 455,155 Z" fill="#e0b070"/>
+
+  <!-- Green healing glow -->
+  <ellipse cx="400" cy="165" rx="45" ry="30" fill="#4dff91" opacity="0.15" filter="url(#rblur2)"/>
+
+  <!-- Checkmarks / healed -->
+  <g fill="none" stroke="#4dff91" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <polyline points="430,138 438,148 452,128"/>
+    <polyline points="440,152 448,162 462,142"/>
+  </g>
+
+  <!-- Happy stars -->
+  <g fill="#4dff91" opacity="0.95" transform="translate(455,125)">
+    <polygon points="0,-10 2.3,-3.1 9.5,-3.1 3.8,1.2 5.9,8.1 0,3.8 -5.9,8.1 -3.8,1.2 -9.5,-3.1 -2.3,-3.1"/>
+  </g>
+  <g fill="#ffcc19" opacity="0.95" transform="translate(467,142)">
+    <polygon points="0,-7 1.6,-2.2 6.6,-2.2 2.7,0.8 4.1,5.7 0,2.7 -4.1,5.7 -2.7,0.8 -6.6,-2.2 -1.6,-2.2"/>
+  </g>
+  <g fill="#ffcc19" opacity="0.8" transform="translate(342,130)">
+    <polygon points="0,-8 1.9,-2.5 7.6,-2.5 3,0.9 4.7,6.5 0,3.1 -4.7,6.5 -3,0.9 -7.6,-2.5 -1.9,-2.5"/>
+  </g>
+
+  <!-- Smile indicator -->
+  <circle cx="400" cy="100" r="18" fill="none" stroke="#4dff91" stroke-width="2" opacity="0.5"/>
+
+  <!-- AFTER label -->
+  <rect x="390" y="22" width="120" height="32" rx="8" fill="rgba(30,180,80,0.85)"/>
+  <text x="450" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff">DOPO</text>
+  <!-- Happy level -->
+  <text x="450" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">senza dolore 😊</text>
+
+  <!-- Bottom text -->
+  <rect x="150" y="255" width="260" height="20" rx="6" fill="rgba(255,204,25,0.15)"/>
+  <text x="280" y="269" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffcc19">Risultati dopo 3 settimane con Depanten</text>
+</svg>

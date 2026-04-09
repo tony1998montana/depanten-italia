@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 320" width="280" height="320">
+  <defs>
+    <radialGradient id="hglow" cx="50%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#b7064d" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#b7064d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hskin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8b080"/>
+      <stop offset="100%" stop-color="#c88050"/>
+    </linearGradient>
+    <filter id="hblur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Glow -->
+  <ellipse cx="140" cy="165" rx="110" ry="90" fill="url(#hglow)" filter="url(#hblur)"/>
+
+  <!-- LEFT HAND -->
+  <!-- Palm -->
+  <path d="M55,160 Q50,140 58,120 Q62,105 72,108 Q78,95 88,100 Q92,88 102,94 Q108,82 118,90 Q126,80 132,90 L134,160 Q110,175 80,172 Z" fill="url(#hskin)"/>
+  <!-- Fingers L -->
+  <!-- Thumb -->
+  <path d="M58,120 Q48,110 44,98 Q42,88 50,85 Q60,83 64,95 Q66,108 68,118 Z" fill="#e8b080"/>
+  <!-- Index -->
+  <path d="M72,108 Q70,88 74,72 Q78,62 86,64 Q94,66 92,80 Q90,94 88,100 Z" fill="#e8b080"/>
+  <!-- Middle -->
+  <path d="M88,100 Q88,78 92,62 Q96,50 104,52 Q112,54 110,68 Q108,82 102,94 Z" fill="#dda070"/>
+  <!-- Ring - inflamed -->
+  <path d="M102,94 Q104,72 108,56 Q112,44 120,46 Q128,48 126,62 Q124,76 118,90 Z" fill="#e8b080"/>
+  <!-- Pinky -->
+  <path d="M118,90 Q120,74 124,62 Q128,52 135,55 Q141,58 138,70 Q136,82 132,90 Z" fill="#e8b080"/>
+
+  <!-- Inflamed joints on left hand -->
+  <circle cx="80" cy="108" r="7" fill="#e74c3c" opacity="0.75"/>
+  <circle cx="96" cy="100" r="7" fill="#e74c3c" opacity="0.75"/>
+  <circle cx="112" cy="93" r="7" fill="#e74c3c" opacity="0.75"/>
+  <circle cx="80" cy="93" r="5" fill="#ff6b6b" opacity="0.6"/>
+  <circle cx="96" cy="85" r="5" fill="#ff6b6b" opacity="0.6"/>
+
+  <!-- RIGHT HAND -->
+  <!-- Palm -->
+  <path d="M225,160 Q230,140 222,120 Q218,105 208,108 Q202,95 192,100 Q188,88 178,94 Q172,82 162,90 Q154,80 148,90 L146,160 Q170,175 200,172 Z" fill="url(#hskin)"/>
+  <!-- Thumb R -->
+  <path d="M222,120 Q232,110 236,98 Q238,88 230,85 Q220,83 216,95 Q214,108 212,118 Z" fill="#e8b080"/>
+  <!-- Index R -->
+  <path d="M208,108 Q210,88 206,72 Q202,62 194,64 Q186,66 188,80 Q190,94 192,100 Z" fill="#e8b080"/>
+  <!-- Middle R -->
+  <path d="M192,100 Q192,78 188,62 Q184,50 176,52 Q168,54 170,68 Q172,82 178,94 Z" fill="#dda070"/>
+  <!-- Ring R - inflamed -->
+  <path d="M178,94 Q176,72 172,56 Q168,44 160,46 Q152,48 154,62 Q156,76 162,90 Z" fill="#e8b080"/>
+  <!-- Pinky R -->
+  <path d="M162,90 Q160,74 156,62 Q152,52 145,55 Q139,58 142,70 Q144,82 148,90 Z" fill="#e8b080"/>
+
+  <!-- Inflamed joints on right hand -->
+  <circle cx="200" cy="108" r="7" fill="#e74c3c" opacity="0.75"/>
+  <circle cx="184" cy="100" r="7" fill="#e74c3c" opacity="0.75"/>
+  <circle cx="168" cy="93" r="7" fill="#e74c3c" opacity="0.75"/>
+  <circle cx="200" cy="93" r="5" fill="#ff6b6b" opacity="0.6"/>
+  <circle cx="184" cy="85" r="5" fill="#ff6b6b" opacity="0.6"/>
+
+  <!-- Wrists -->
+  <rect x="50" y="158" width="88" height="40" rx="12" fill="#d49060"/>
+  <rect x="142" y="158" width="88" height="40" rx="12" fill="#d49060"/>
+
+  <!-- Pain sparkles -->
+  <g fill="#ffcc19" opacity="0.9" transform="translate(98,68) scale(0.6)">
+    <polygon points="0,-14 3.3,-4.3 13.3,-4.3 5.5,1.7 8.2,11.4 0,5.1 -8.2,11.4 -5.5,1.7 -13.3,-4.3 -3.3,-4.3"/>
+  </g>
+  <g fill="#ffcc19" opacity="0.9" transform="translate(182,68) scale(0.6)">
+    <polygon points="0,-14 3.3,-4.3 13.3,-4.3 5.5,1.7 8.2,11.4 0,5.1 -8.2,11.4 -5.5,1.7 -13.3,-4.3 -3.3,-4.3"/>
+  </g>
+
+  <!-- Knuckle lines on palms -->
+  <path d="M65,148 Q80,145 95,147" stroke="#b07040" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M185,148 Q200,145 215,147" stroke="#b07040" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Label -->
+  <rect x="30" y="218" width="190" height="34" rx="8" fill="rgba(183,6,77,0.85)"/>
+  <text x="125" y="239" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#fff">Artrite alle Mani</text>
+</svg>

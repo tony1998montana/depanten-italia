@@ -35,6 +35,9 @@ SEO-сайт для итальянского бренда крема для су
 - **Кнопка:** `.btn-buy` — градиент малиновый, hover эффект
 - **Продукт:** `product.svg` — custom SVG без everad CDN
 
+## Расположение
+- **Папка:** `/root/seo/depanten-italia`
+
 ## Деплой
 - **GitHub:** https://github.com/tony1998montana/depanten-italia
 - **Cloudflare Pages:** https://depanten-italia.pages.dev ✅
@@ -53,7 +56,7 @@ SEO-сайт для итальянского бренда крема для су
 # 2. Установить переменную:
 export CLOUDFLARE_API_TOKEN=your_token_here
 # 3. Создать проект и задеплоить:
-cd /home/skip/Depanten
+cd /root/seo/depanten-italia
 wrangler pages project create depanten-italia --production-branch master
 wrangler pages deploy . --project-name depanten-italia
 ```
