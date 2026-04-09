@@ -37,7 +37,7 @@ SEO-сайт для итальянского бренда крема для су
 
 ## Деплой
 - **GitHub:** https://github.com/tony1998montana/depanten-italia
-- **Cloudflare Pages:** требует `CLOUDFLARE_API_TOKEN` (ожидает деплоя)
+- **Cloudflare Pages:** https://depanten-italia.pages.dev ✅
 
 ## Важно
 - Нет форм (убраны по требованию)
