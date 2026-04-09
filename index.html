@@ -9,27 +9,8 @@
   <link rel="canonical" href="https://depanten.it/"/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="icon" href="product.svg" type="image/svg+xml"/>
-  <!-- Schema.org Markup -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Depanten Crema",
-    "description": "Crema professionale per dolori articolari, muscolari e artrosi. Formula naturale italiana.",
-    "brand": {"@type": "Brand", "name": "Depanten"},
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "EUR",
-      "price": "39",
-      "availability": "https://schema.org/InStock",
-      "seller": {"@type": "Organization", "name": "Depanten Italia"}
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "1247"
-    }
-  }
+  {"@context":"https://schema.org","@type":"Product","name":"Depanten Crema","description":"Crema professionale per dolori articolari, muscolari e artrosi.","brand":{"@type":"Brand","name":"Depanten"},"offers":{"@type":"Offer","priceCurrency":"EUR","price":"39","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"1247"}}
   </script>
 </head>
 <body>
@@ -38,11 +19,8 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="logo">
-      <img src="product.svg" alt="Depanten Logo" class="logo-img"/>
-      <div>
-        <span class="logo-text">Depanten</span>
-        <div class="logo-sub">Italia — dal 2010</div>
-      </div>
+      <img src="product.svg" alt="Depanten" class="logo-img"/>
+      <div><span class="logo-text">Depanten</span><div class="logo-sub">Italia — dal 2010</div></div>
     </a>
     <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
     <nav class="site-nav">
@@ -58,15 +36,22 @@
   </div>
 </header>
 
-<!-- BREADCRUMBS -->
-<div class="breadcrumbs container">
-  <a href="index.html">Home</a>
-</div>
+<!-- ============================================================
+     PRODUCT SHOWCASE — HERO CON FOTO PRODOTTO
+     ============================================================ -->
+<section class="product-showcase">
+  <div class="showcase-inner">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-content">
+    <!-- FOTO PRODOTTO GRANDE -->
+    <div class="showcase-product">
+      <div class="product-glow-gold"></div>
+      <div class="product-glow"></div>
+      <img src="product.svg" alt="Depanten — Crema per Articolazioni 75ml"/>
+      <div class="product-badge">✦ 75 ml · 39 €</div>
+    </div>
+
+    <!-- CONTENUTO HERO -->
+    <div class="showcase-content">
       <div class="hero-badge">
         <span>Offerta Limitata</span>
         <span class="discount">-50%</span>
@@ -77,23 +62,25 @@
         <li>Allevia dolori articolari e muscolari diffusi</li>
         <li>Rigenera la cartilagine articolare</li>
         <li>Efficace contro artrosi e artrite</li>
-        <li>Riduce il gonfiore e l'infiammazione</li>
+        <li>Riduce gonfiore e infiammazione</li>
         <li>Formula 100% naturale, senza effetti collaterali</li>
       </ul>
-      <a href="https://order.depanten.it/" class="btn-buy-sm">🛒 Ordina Ora con Sconto 50%</a>
-    </div>
-    <div class="price-card">
-      <div class="product-img-wrap">
-        <img src="product.svg" alt="Depanten Crema per Articolazioni"/>
+
+      <div class="price-widget">
+        <div>
+          <div class="price-new">39 <span>€</span></div>
+          <div class="price-old">78 €</div>
+          <div class="price-saving">Risparmio: 39 € — Sconto 50%</div>
+        </div>
+        <a href="https://order.depanten.it/" class="btn-buy">ORDINARE →</a>
       </div>
-      <div class="promo-label">PREZZO PROMOZIONALE</div>
-      <div class="price-display">
-        <div class="price-new">39 <span>€</span></div>
-        <div class="price-old">78 €</div>
-        <div class="price-saving">Risparmio: 39 € — Sconto 50%</div>
+
+      <div class="trust-badges">
+        <div class="trust-badge"><span class="icon">🔒</span> Pagamento alla consegna</div>
+        <div class="trust-badge"><span class="icon">🚚</span> 4–7 giorni</div>
+        <div class="trust-badge"><span class="icon">🌿</span> 100% Naturale</div>
+        <div class="trust-badge"><span class="icon">🇮🇹</span> Made in Italy</div>
       </div>
-      <a href="https://order.depanten.it/" class="btn-buy">ORDINARE →</a>
-      <p class="delivery-note">🚚 Consegna in <strong>4–7 giorni</strong> · Pagamento alla consegna</p>
     </div>
   </div>
 </section>
@@ -105,16 +92,16 @@
       <div class="about-text">
         <h2 class="section-title" style="text-align:left">Depanten contiene solo componenti attivi!</h2>
         <p>Depanten è un prodotto che allevia il dolore causato dall'osteoartrite e dall'osteocondrosi. Allevia gli spasmi muscolari e arresta l'infiammazione.</p>
-        <p>Depanten è efficace nel trattamento dell'osteoartrite e dell'osteocondrosi, poiché rallenta il processo degenerativo della cartilagine e stimola il metabolismo dei tessuti, contribuendo alla rigenerazione della cartilagine articolare.</p>
-        <p>Gli effetti si vedono dalla <strong style="color:var(--gold)">prima applicazione</strong>. L'uso regolare del prodotto può rallentare la progressione di malattie articolari e alla colonna vertebrale.</p>
-        <div class="trust-badges" style="justify-content:flex-start; margin-top:20px">
-          <div class="trust-badge"><span class="icon">✓</span> Certificato</div>
+        <p>Efficace nel trattamento dell'osteoartrite e dell'osteocondrosi, Depanten rallenta il processo degenerativo della cartilagine e stimola il metabolismo dei tessuti, contribuendo alla rigenerazione articolare.</p>
+        <p>Gli effetti si vedono dalla <strong style="color:var(--gold)">prima applicazione</strong>. L'uso regolare può rallentare la progressione di malattie articolari e alla colonna vertebrale.</p>
+        <div class="trust-badges" style="margin-top:20px">
+          <div class="trust-badge"><span class="icon">✓</span> Certificato CE</div>
           <div class="trust-badge"><span class="icon">🌿</span> 100% Naturale</div>
-          <div class="trust-badge"><span class="icon">🇮🇹</span> Made in Italy</div>
+          <div class="trust-badge"><span class="icon">🏆</span> 1200+ Recensioni</div>
         </div>
       </div>
       <div class="about-img">
-        <img src="product.svg" alt="Depanten crema articolazioni" style="max-width:260px"/>
+        <img src="product.svg" alt="Depanten crema articolazioni"/>
       </div>
     </div>
   </div>
@@ -126,31 +113,11 @@
     <h2 class="section-title">Perché scegliere Depanten?</h2>
     <p class="section-sub">5 motivi per cui migliaia di italiani scelgono Depanten ogni giorno</p>
     <div class="benefits-grid">
-      <div class="benefit-card">
-        <span class="benefit-icon">🎯</span>
-        <h3>Ampio Raggio d'Azione</h3>
-        <p>Cura le malattie traumatiche e degenerative della colonna e delle articolazioni</p>
-      </div>
-      <div class="benefit-card">
-        <span class="benefit-icon">✅</span>
-        <h3>Nessun Effetto Collaterale</h3>
-        <p>Sicuro sia per uso occasionale che regolare, adatto a tutte le età</p>
-      </div>
-      <div class="benefit-card">
-        <span class="benefit-icon">🌿</span>
-        <h3>100% Naturale</h3>
-        <p>Solo componenti attive da piante medicinali selezionate</p>
-      </div>
-      <div class="benefit-card">
-        <span class="benefit-icon">⚡</span>
-        <h3>Altamente Efficace</h3>
-        <p>Migliora la condizione generale e allieva il dolore dalla prima applicazione</p>
-      </div>
-      <div class="benefit-card">
-        <span class="benefit-icon">🏆</span>
-        <h3>Testato dagli Esperti</h3>
-        <p>Prodotto certificato che rispetta tutti gli standard di qualità europei</p>
-      </div>
+      <div class="benefit-card"><span class="benefit-icon">🎯</span><h3>Ampio Raggio</h3><p>Cura malattie traumatiche e degenerative della colonna e delle articolazioni</p></div>
+      <div class="benefit-card"><span class="benefit-icon">✅</span><h3>Nessun Effetto Collaterale</h3><p>Sicuro sia per uso occasionale che regolare, adatto a tutte le età</p></div>
+      <div class="benefit-card"><span class="benefit-icon">🌿</span><h3>100% Naturale</h3><p>Solo componenti attive da piante medicinali selezionate</p></div>
+      <div class="benefit-card"><span class="benefit-icon">⚡</span><h3>Altamente Efficace</h3><p>Migliora la condizione e allieva il dolore dalla prima applicazione</p></div>
+      <div class="benefit-card"><span class="benefit-icon">🏆</span><h3>Testato dagli Esperti</h3><p>Prodotto certificato che rispetta tutti gli standard di qualità europei</p></div>
     </div>
   </div>
 </section>
@@ -161,30 +128,12 @@
     <h2 class="section-title">Ingredienti Attivi</h2>
     <p class="section-sub">Formula esclusiva con ingredienti naturali ad alta concentrazione</p>
     <div class="ingredients-grid">
-      <div class="ingredient-item">
-        <span class="ingredient-icon">💧</span>
-        <div><h4>Acido Ialuronico</h4><p>Lubrifica e rigenera le articolazioni dall'interno</p></div>
-      </div>
-      <div class="ingredient-item">
-        <span class="ingredient-icon">🌺</span>
-        <div><h4>Arnica Montana</h4><p>Potente antinfiammatorio naturale per dolori muscolari</p></div>
-      </div>
-      <div class="ingredient-item">
-        <span class="ingredient-icon">🐟</span>
-        <div><h4>Collagene Marino</h4><p>Rinforza i tessuti cartilaginei e la mobilità</p></div>
-      </div>
-      <div class="ingredient-item">
-        <span class="ingredient-icon">🌶️</span>
-        <div><h4>Capsaicina</h4><p>Effetto termogenico per un sollievo rapido dal dolore</p></div>
-      </div>
-      <div class="ingredient-item">
-        <span class="ingredient-icon">🫚</span>
-        <div><h4>Olio di Eucalipto</h4><p>Azione rinfrescante e antinfiammatoria profonda</p></div>
-      </div>
-      <div class="ingredient-item">
-        <span class="ingredient-icon">🌿</span>
-        <div><h4>Estratto di Glucosamina</h4><p>Ripristina la cartilagine e riduce la rigidità</p></div>
-      </div>
+      <div class="ingredient-item"><span class="ingredient-icon">💧</span><div><h4>Acido Ialuronico</h4><p>Lubrifica e rigenera le articolazioni dall'interno</p></div></div>
+      <div class="ingredient-item"><span class="ingredient-icon">🌺</span><div><h4>Arnica Montana</h4><p>Potente antinfiammatorio naturale per dolori muscolari</p></div></div>
+      <div class="ingredient-item"><span class="ingredient-icon">🐟</span><div><h4>Collagene Marino</h4><p>Rinforza i tessuti cartilaginei e la mobilità</p></div></div>
+      <div class="ingredient-item"><span class="ingredient-icon">🌶️</span><div><h4>Capsaicina</h4><p>Effetto termogenico per un sollievo rapido dal dolore</p></div></div>
+      <div class="ingredient-item"><span class="ingredient-icon">🫚</span><div><h4>Olio di Eucalipto</h4><p>Azione rinfrescante e antinfiammatoria profonda</p></div></div>
+      <div class="ingredient-item"><span class="ingredient-icon">🌿</span><div><h4>Glucosamina</h4><p>Ripristina la cartilagine e riduce la rigidità</p></div></div>
     </div>
   </div>
 </section>
@@ -195,7 +144,7 @@
   <div class="expert-box">
     <div class="expert-avatar">👨‍⚕️</div>
     <div>
-      <p class="expert-quote">"Il gel Depanten è un prodotto grandioso per l'osteoartrite e l'osteocondrosi. Lo raccomando a tutti i pazienti con dolori di schiena o articolari. Depanten allevia in fretta il dolore e l'infiammazione, rigenera le articolazioni e i tendini, aiutando a tornare ad una vita attiva. L'uso continuato aiuterà a dimenticarsi dei problemi alla schiena."</p>
+      <p class="expert-quote">"Il gel Depanten è un prodotto grandioso per l'osteoartrite e l'osteocondrosi. Lo raccomando a tutti i pazienti con dolori di schiena o articolari. Depanten allevia in fretta il dolore e l'infiammazione, rigenera le articolazioni e i tendini, aiutando a tornare ad una vita attiva."</p>
       <div class="expert-name">Dr. Carlo Ponti</div>
       <div class="expert-title">Specialista di Medicina Sportiva — Milano</div>
     </div>
@@ -208,21 +157,9 @@
     <h2 class="section-title">Cosa dicono i nostri clienti</h2>
     <p class="section-sub">Oltre 1.200 recensioni verificate da tutta Italia</p>
     <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>Depanten mi ha aiutata con un trauma alle articolazioni del ginocchio. Dopo soli 5 giorni di uso regolare, il dolore era sparito quasi completamente. Lo consiglio a tutti!</p>
-        <div class="testimonial-author">— Elisa, 31 anni, insegnante di fitness, Torino</div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>Prima la schiena mi faceva molto male a causa dell'osteocondrosi. Con Depanten ho finalmente trovato sollievo duraturo. Il mio medico è rimasto sorpreso dai risultati!</p>
-        <div class="testimonial-author">— Gianni, 58 anni, pensionato, Roma</div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★☆</div>
-        <p>Mi ero fatta male alla caviglia e i medici dicevano che sarebbe stata una lunga guarigione. Grazie a Depanten mi sono ripresa molto prima del previsto. Prodotto eccellente!</p>
-        <div class="testimonial-author">— Stefania, 35 anni, commessa, Napoli</div>
-      </div>
+      <div class="testimonial-card"><div class="stars">★★★★★</div><p>Depanten mi ha aiutata con un trauma alle articolazioni del ginocchio. Dopo 5 giorni di uso regolare, il dolore era sparito quasi completamente.</p><div class="testimonial-author">— Elisa, 31 anni, Torino</div></div>
+      <div class="testimonial-card"><div class="stars">★★★★★</div><p>Prima la schiena mi faceva molto male a causa dell'osteocondrosi. Con Depanten ho finalmente trovato sollievo duraturo. Il mio medico è rimasto sorpreso!</p><div class="testimonial-author">— Gianni, 58 anni, Roma</div></div>
+      <div class="testimonial-card"><div class="stars">★★★★☆</div><p>Mi ero fatta male alla caviglia. Grazie a Depanten mi sono ripresa molto prima del previsto. Prodotto eccellente!</p><div class="testimonial-author">— Stefania, 35 anni, Napoli</div></div>
     </div>
   </div>
 </section>
@@ -233,21 +170,9 @@
     <h2 class="section-title">Come Applicare Depanten</h2>
     <p class="section-sub">3 semplici passi per il massimo effetto</p>
     <div class="steps-grid">
-      <div class="step-item">
-        <div class="step-number">1</div>
-        <h3>Applicare</h3>
-        <p>Applicare su pelle pulita e asciutta massaggiando fino al completo assorbimento</p>
-      </div>
-      <div class="step-item">
-        <div class="step-number">2</div>
-        <h3>Massaggiare</h3>
-        <p>Usare 2–3 volte al giorno, preferibilmente mattina, pomeriggio e sera</p>
-      </div>
-      <div class="step-item">
-        <div class="step-number">3</div>
-        <h3>Attendere</h3>
-        <p>Non risciacquare fino ad almeno un'ora dopo l'applicazione per massimo effetto</p>
-      </div>
+      <div class="step-item"><div class="step-number">1</div><h3>Applicare</h3><p>Applicare su pelle pulita e asciutta massaggiando fino al completo assorbimento</p></div>
+      <div class="step-item"><div class="step-number">2</div><h3>Massaggiare</h3><p>Usare 2–3 volte al giorno, preferibilmente mattina, pomeriggio e sera</p></div>
+      <div class="step-item"><div class="step-number">3</div><h3>Attendere</h3><p>Non risciacquare per almeno 1 ora dopo l'applicazione per il massimo effetto</p></div>
     </div>
   </div>
 </section>
@@ -257,31 +182,15 @@
   <div class="container">
     <h2 class="section-title">Consegna e Pagamento</h2>
     <div class="delivery-grid">
-      <div class="delivery-item">
-        <div class="icon">🚚</div>
-        <h3>Consegna Rapida</h3>
-        <p>Riceverete Depanten entro 4–7 giorni dall'ordine in tutta Italia</p>
-      </div>
-      <div class="delivery-item">
-        <div class="icon">💳</div>
-        <h3>Pagamento Sicuro</h3>
-        <p>Potete pagare in contanti alla consegna — nessun rischio!</p>
-      </div>
-      <div class="delivery-item">
-        <div class="icon">📦</div>
-        <h3>Imballaggio Discreto</h3>
-        <p>Spedizione in packaging neutro senza indicazioni del contenuto</p>
-      </div>
-      <div class="delivery-item">
-        <div class="icon">🔄</div>
-        <h3>Garanzia 30 Giorni</h3>
-        <p>Se non siete soddisfatti, rimborso completo entro 30 giorni</p>
-      </div>
+      <div class="delivery-item"><div class="icon">🚚</div><h3>Consegna Rapida</h3><p>Riceverete Depanten entro 4–7 giorni in tutta Italia</p></div>
+      <div class="delivery-item"><div class="icon">💳</div><h3>Pagamento Sicuro</h3><p>Potete pagare in contanti alla consegna — nessun rischio!</p></div>
+      <div class="delivery-item"><div class="icon">📦</div><h3>Imballaggio Discreto</h3><p>Spedizione in packaging neutro senza indicazioni del contenuto</p></div>
+      <div class="delivery-item"><div class="icon">🔄</div><h3>Garanzia 30 Giorni</h3><p>Se non siete soddisfatti, rimborso completo entro 30 giorni</p></div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- CTA FINALE -->
 <section class="cta-section">
   <h2>SOLO PER OGGI — Sconto del 50%!</h2>
   <p class="subtitle">Ordina adesso e ricevi Depanten al prezzo speciale promozionale</p>
@@ -289,75 +198,78 @@
     <span class="cta-price-new">39 €</span>
     <span class="cta-price-old">78 €</span>
   </div>
-  <a href="https://order.depanten.it/" class="btn-buy" style="max-width:400px; display:inline-block;">ORDINARE DEPANTEN →</a>
-  <div class="trust-badges" style="margin-top:20px">
+  <a href="https://order.depanten.it/" class="btn-buy" style="max-width:420px;display:inline-block;">ORDINARE DEPANTEN →</a>
+  <div class="trust-badges" style="justify-content:center;margin-top:20px">
     <div class="trust-badge"><span class="icon">🔒</span> Pagamento Sicuro</div>
     <div class="trust-badge"><span class="icon">✅</span> Prodotto Certificato</div>
     <div class="trust-badge"><span class="icon">🇮🇹</span> Made in Italy</div>
   </div>
 </section>
 
-<!-- INTERNAL LINKS -->
-<section class="links-section">
-  <div class="container">
-    <h2 class="section-title">Informazioni Utili</h2>
-    <p class="section-sub">Approfondisci i temi legati ai dolori articolari e muscolari</p>
-    <div class="links-grid">
-      <a href="crema-depanten.html">Crema Depanten: composizione e benefici</a>
-      <a href="depanten-farmacia.html">Depanten in farmacia: dove comprare</a>
-      <a href="dolori-articolari.html">Rimedi per dolori articolari</a>
-      <a href="dolori-muscolari-articolari.html">Dolori muscolari e articolari diffusi</a>
-      <a href="proteina-c-reattiva.html">Proteina C reattiva alta e dolori articolari</a>
-      <a href="crema-per-articolazioni.html">Crema per le articolazioni: guida</a>
-      <a href="crema-acido-ialuronico.html">Crema acido ialuronico per articolazioni</a>
-      <a href="dolore-al-ginocchio.html">Dolore al ginocchio: cause e rimedi</a>
-      <a href="dolore-dietro-ginocchio.html">Dolore dietro al ginocchio</a>
-      <a href="artrosi-cura.html">Artrosi: come curarla</a>
-      <a href="come-curare-artrosi.html">Come curare l'artrosi con Depanten</a>
-      <a href="artrite-mani.html">Artrite alle mani: rimedi naturali</a>
-      <a href="dolore-alla-schiena.html">Dolore alla schiena: cause e trattamenti</a>
-      <a href="dolore-schiena-parte-bassa.html">Dolore alla schiena parte bassa</a>
+<!-- ============================================================
+     FOOTER CON TUTTE LE PAGINE IN BASSO
+     ============================================================ -->
+<footer class="site-footer">
+
+  <!-- NAVIGAZIONE COMPLETA TUTTE LE PAGINE -->
+  <div class="footer-pages">
+    <div class="footer-pages-title">🔗 Tutte le Pagine del Sito</div>
+    <div class="pages-nav-grid">
+      <a href="index.html" class="active"><span class="pg-icon">🏠</span>Homepage — Depanten Italia</a>
+      <a href="crema-depanten.html"><span class="pg-icon">🧴</span>Crema Depanten: composizione</a>
+      <a href="depanten-farmacia.html"><span class="pg-icon">💊</span>Depanten in Farmacia</a>
+      <a href="dolori-articolari.html"><span class="pg-icon">🦴</span>Dolori Articolari</a>
+      <a href="dolori-muscolari-articolari.html"><span class="pg-icon">💪</span>Dolori Muscolari Diffusi</a>
+      <a href="proteina-c-reattiva.html"><span class="pg-icon">🔬</span>Proteina C Reattiva Alta</a>
+      <a href="crema-per-articolazioni.html"><span class="pg-icon">🧴</span>Crema per le Articolazioni</a>
+      <a href="crema-acido-ialuronico.html"><span class="pg-icon">💧</span>Crema Acido Ialuronico</a>
+      <a href="dolore-al-ginocchio.html"><span class="pg-icon">🦵</span>Dolore al Ginocchio</a>
+      <a href="dolore-dietro-ginocchio.html"><span class="pg-icon">🦵</span>Dolore Dietro al Ginocchio</a>
+      <a href="artrosi-cura.html"><span class="pg-icon">🩺</span>Artrosi: Chi la Cura</a>
+      <a href="come-curare-artrosi.html"><span class="pg-icon">💊</span>Come Curare l'Artrosi</a>
+      <a href="artrite-mani.html"><span class="pg-icon">🤲</span>Artrite alle Mani Rimedi</a>
+      <a href="dolore-alla-schiena.html"><span class="pg-icon">🔙</span>Dolore alla Schiena</a>
+      <a href="dolore-schiena-parte-bassa.html"><span class="pg-icon">⬇️</span>Dolore Schiena Parte Bassa</a>
     </div>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <span class="logo-text">Depanten</span>
-        <div class="logo-sub">Italia — dal 2010</div>
-        <p>Crema professionale per dolori articolari e muscolari. Formula naturale, efficacia provata, prodotto in Italia.</p>
+  <!-- FOOTER MAIN -->
+  <div class="footer-main">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text">Depanten</span>
+          <div class="logo-sub">Italia — dal 2010</div>
+          <p>Crema professionale per dolori articolari e muscolari. Formula naturale, efficacia provata, prodotto in Italia.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Prodotto</h4>
+          <ul>
+            <li><a href="crema-depanten.html">Crema Depanten</a></li>
+            <li><a href="crema-per-articolazioni.html">Crema per articolazioni</a></li>
+            <li><a href="crema-acido-ialuronico.html">Crema acido ialuronico</a></li>
+            <li><a href="depanten-farmacia.html">Depanten in farmacia</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Condizioni trattate</h4>
+          <ul>
+            <li><a href="dolori-articolari.html">Dolori articolari</a></li>
+            <li><a href="artrosi-cura.html">Artrosi</a></li>
+            <li><a href="artrite-mani.html">Artrite alle mani</a></li>
+            <li><a href="dolore-al-ginocchio.html">Dolore al ginocchio</a></li>
+            <li><a href="dolore-alla-schiena.html">Dolore alla schiena</a></li>
+            <li><a href="proteina-c-reattiva.html">Proteina C reattiva alta</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Prodotto</h4>
-        <ul>
-          <li><a href="crema-depanten.html">Crema Depanten</a></li>
-          <li><a href="crema-per-articolazioni.html">Crema per articolazioni</a></li>
-          <li><a href="crema-acido-ialuronico.html">Crema acido ialuronico</a></li>
-          <li><a href="depanten-farmacia.html">Depanten in farmacia</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Condizioni trattate</h4>
-        <ul>
-          <li><a href="dolori-articolari.html">Dolori articolari</a></li>
-          <li><a href="dolori-muscolari-articolari.html">Dolori muscolari</a></li>
-          <li><a href="artrosi-cura.html">Artrosi</a></li>
-          <li><a href="artrite-mani.html">Artrite alle mani</a></li>
-          <li><a href="dolore-al-ginocchio.html">Dolore al ginocchio</a></li>
-          <li><a href="dolore-alla-schiena.html">Dolore alla schiena</a></li>
-          <li><a href="proteina-c-reattiva.html">Proteina C reattiva alta</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2024 Depanten Italia. Tutti i diritti riservati.</p>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="termini.html">Termini di Servizio</a>
-        <a href="contatti.html">Contatti</a>
+      <div class="footer-bottom">
+        <p>© 2024 Depanten Italia. Tutti i diritti riservati. Il prodotto non è un medicinale.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="termini.html">Termini</a>
+          <a href="contatti.html">Contatti</a>
+        </div>
       </div>
     </div>
   </div>
